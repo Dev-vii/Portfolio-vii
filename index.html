@@ -6,27 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev-vii</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 </head>
 
 <body>
-
-    <div id="intro">
-        <h1>Olá, me chamo Vicente!</h1>
-        <p>Busco ser um desenvolvedor Front-end</p>
-    </div>
-
-    <img src="img/Foto1.PNG" alt="foto1" id="foto1">
-
+    <!-- HEADER -->
     <Header>
-        <div>
-            <a href="https://www.instagram.com/vi.ncarvalho/" target="_blank">
-                <img src="img/insta.png" alt="instagarm" id="contato">
+        <ul id="opç-header">
+            <li><a href="https://instagram.com/vi.ncarvalho" target="_blank" id="Link">Introdução</a></li>
+            <!--MUDAR LINK-->
+            <li>Tecnologias</li>
+            <li>Projetos</li>
+            <li>Contato</li>
+        </ul>
+        <div id="contato1">
+            <a href="https://instagram.com/vi.ncarvalho" target="_blank">
+                <img src="img/insta.png" alt="instagarm" id="insta">
             </a>
             <a href="https://github.com/Dev-vii" target="_blank">
-                <img src="img/github.png" alt="github" id="contato">
+                <img src="img/github.png" alt="github" id="github">
             </a>
         </div>
     </Header>
+
+    <!-- INTRODUÇÃO -->
+    <div id="intro">
+        <h1>Olá, me chamo <span style="color: rgb(62, 207, 111);">Vicente!</span></h1>
+        <p>Tenho 16 anos, busco me tornar um desenvolvedor <br>ná area do Front-end.</p>
+    </div>
+
+    <!-- FOTO -->
+    <img src="img/Foto1.PNG" alt="foto1" id="foto1">
+    <div id="circle"></div>
+
+    <!-- TECNOLOGIAS -->
+    <div id="tecnologias">
+        <div>
+            <img src="img/html5.png" id="html5">
+            <div id="cartão"></div>
+        </div>
+        <div>
+            <img src="img/css3.png" id="css3">
+            <div id="cartão"></div>
+        </div>
+        <div>
+            <img src="img/javascript.png" id="javascript">
+            <div id="cartão"></div>
+        </div>
+    </div>
+
 
     <script src="script.js"></script>
 </body>

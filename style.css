@@ -1,25 +1,51 @@
 body {
-    background-color: #fcf9f9;
+    background-color: #080808;
 }
-
+/* LINKS SEM EFEITO */
+#Link{
+    text-decoration: none;
+    color: inherit;
+}
+/* HEADER */
 Header {
     position: fixed;
-    background-color: rgb(172, 203, 238);
-    height: 12%;
-    width: 100%;
-    left: 0px;
-    top: 0px;
+    z-index: 4;
 
-    & #contato {
+    & #opç-header {
+        position: absolute;
+        cursor: pointer;
+        display: flex;
+        list-style: none;
+        font-family: "Roboto Condensed", serif;
+        color: #fcf9f9;
+        gap: 200px;
+        top: 5px;
+        left: 60px;
+    }
+
+    & li:hover {
+        color: rgb(62, 207, 111);
+        text-decoration: underline;
+        transition: 0.2s;
+    }
+
+    & #contato1 {
         cursor: pointer;
         position: relative;
-        gap: 10px;
-        left: 1100px;
-        top: 12px;
-        height: 50px;
+        left: 1200px;
+        top: 10px;
+
+        & #insta {
+            height: 40px;
+        }
+
+        & #github {
+            height: 40px;
+        }
     }
 }
 
+/* FOTO */
 #foto1 {
     position: absolute;
     left: 800px;
@@ -29,9 +55,72 @@ Header {
     border-radius: 50%
 }
 
+#circle {
+    position: absolute;
+    z-index: -1;
+    top: 155px;
+    left: 805px;
+    width: 360px;
+    height: 360px;
+    border-color: rgb(48, 122, 64);
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+/* INTRODUÇÃO */
 #intro {
     position: absolute;
+    font-family: "Roboto Condensed", serif;
+    color: #fcf9f9;
     left: 100px;
-    top: 180px;
+    top: 200px;
     font-size: 30px;
+
+    & p {
+        position: absolute;
+        left: 10px;
+        margin-top: -30px;
+        font-size: 23px;
+    }
+}
+
+/* TECNOLOGIAS */
+#tecnologias{
+    display: flex;
+    position: absolute;
+    top: 1000px;
+    left: 265px;
+    gap: 150px;
+
+    & #cartão{
+        position: absolute;
+        z-index: -1;
+        display: flex;
+        background-color: rgb(36, 36, 36);
+        border-color: rgb(62, 207, 111);
+        border-style: solid;
+        border-radius: 40px;
+        border-width: 5px;
+        width: 300px;
+        height: 500px;
+        margin-left: -120px;
+        justify-content: space-between;
+        gap: 900px;
+        top: -40px;
+    }
+
+    & #html5{
+        height: 230px;
+
+    }
+
+    & #css3{
+        height: 230px;
+    }
+
+    & #javascript{
+        margin-top: 40px;
+        height: 180px;
+    }
 }
