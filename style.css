@@ -90,37 +90,37 @@ Header {
     display: flex;
     position: absolute;
     top: 1000px;
-    left: 265px;
-    gap: 150px;
+    left: 150px;
+    gap: 350px;
 
     & #cartão{
         position: absolute;
         z-index: -1;
         display: flex;
         background-color: rgb(36, 36, 36);
-        border-color: rgb(62, 207, 111);
+        border-color: rgb(55, 184, 98);
         border-style: solid;
         border-radius: 40px;
         border-width: 5px;
         width: 300px;
         height: 500px;
-        margin-left: -120px;
-        justify-content: space-between;
-        gap: 900px;
-        top: -40px;
+        justify-content: center;
+
+        & #tec{
+            margin-top: 20px;
+            width: 130px;
+            height: 180px;
+        }
+
+        p{
+            position: absolute;
+            top: 205px;
+            font-size: 30px;
+        }
     }
 
-    & #html5{
-        height: 230px;
-
-    }
-
-    & #css3{
-        height: 230px;
-    }
-
-    & #javascript{
-        margin-top: 40px;
-        height: 180px;
+    & #content {
+        color: #fcf9f9;
+        font-family: "Roboto Condensed", serif;
     }
 }
