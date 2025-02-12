@@ -29,7 +29,7 @@ Header {
         list-style: none;
         font-family: "Roboto Condensed", serif;
         color: #fcf9f9;
-        gap: 200px;
+        gap: 160px;
         top: 5px;
         left: 60px;
     }
@@ -101,7 +101,7 @@ Header {
 #tecnologias {
     display: flex;
     position: absolute;
-    top: 950px;
+    top: 1800px;
     left: 150px;
     gap: 350px;
 
@@ -111,7 +111,7 @@ Header {
         font-family: "Roboto Condensed", serif;
         font-size: 50px;
         margin-left: 270px;
-        top: -180px;
+        top: -140px;
     }
 
     & #cartão {
@@ -150,5 +150,34 @@ Header {
     & #content {
         color: #fcf9f9;
         font-family: "Roboto Condensed", serif;
+    }
+}
+
+#bio{
+    position: absolute;
+    top: 850px;
+    left: 120px;
+    font-family: "Roboto Condensed", serif;
+    color: #fcf9f9;
+    font-size: 30px;
+
+    & #biografia{
+        position: absolute;
+        z-index: -1;
+        display: flex;
+        background-color: rgb(36, 36, 36);
+        border-color: rgb(55, 184, 98);
+        border-style: solid;
+        border-radius: 10px;
+        border-width: 5px;
+        width: 700px;
+        height: 300px;
+        top: 120px;
+    }
+
+    p{
+        position: absolute;
+        font-size: 23px;
+        left: 50px;
     }
 }
