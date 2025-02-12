@@ -1,15 +1,25 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     background-color: #080808;
 }
+
 /* LINKS SEM EFEITO */
-#Link{
+#Link {
     text-decoration: none;
     color: inherit;
 }
+
 /* HEADER */
 Header {
     position: fixed;
     z-index: 4;
+    background-color: #080808;
+    width: 100%;
+    height: 65px;
+    top: 0;
+    left: 0;
 
     & #opç-header {
         position: absolute;
@@ -86,14 +96,23 @@ Header {
 }
 
 /* TECNOLOGIAS */
-#tecnologias{
+#tecnologias {
     display: flex;
     position: absolute;
-    top: 1000px;
+    top: 950px;
     left: 150px;
     gap: 350px;
 
-    & #cartão{
+    h2{
+        position: absolute;
+        color: #fcf9f9;
+        font-family: "Roboto Condensed", serif;
+        font-size: 50px;
+        margin-left: 270px;
+        top: -180px;
+    }
+
+    & #cartão {
         position: absolute;
         z-index: -1;
         display: flex;
@@ -106,16 +125,23 @@ Header {
         height: 500px;
         justify-content: center;
 
-        & #tec{
+        & #tec {
             margin-top: 20px;
             width: 130px;
             height: 180px;
         }
 
-        p{
+        h3 {
             position: absolute;
             top: 205px;
             font-size: 30px;
+        }
+
+        p {
+            position: absolute;
+            top: 280px;
+            text-align: center;
+            font-size: 16px;
         }
     }
 
