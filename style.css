@@ -1,9 +1,14 @@
 html {
     scroll-behavior: smooth;
 }
-
 body {
     background-color: #080808;
+}
+
+/* LINKS DE TRANSIÇÃO */
+#linkbio {
+    position: absolute;
+    top: -130px;
 }
 
 /* LINKS SEM EFEITO */
@@ -74,7 +79,7 @@ Header {
     width: 360px;
     height: 360px;
     border-color: rgb(48, 122, 64);
-    box-shadow: 0px 0px 10px rgb(48, 122, 64);
+    box-shadow: 0px 0px 20px rgb(48, 122, 64);
     border-width: 3px;
     border-style: solid;
     border-radius: 50%;
@@ -94,6 +99,37 @@ Header {
         left: 10px;
         margin-top: -30px;
         font-size: 23px;
+    }
+}
+
+/* BIOGRAFIA */
+#bio {
+    position: absolute;
+    top: 850px;
+    left: 120px;
+    font-family: "Roboto Condensed", serif;
+    color: #fcf9f9;
+    font-size: 30px;
+
+    & #biografia {
+        position: absolute;
+        z-index: -1;
+        display: flex;
+        background-color: rgb(36, 36, 36);
+        border-color: rgb(55, 184, 98);
+        border-style: solid;
+        border-radius: 10px;
+        border-width: 5px;
+        width: 700px;
+        height: 300px;
+        top: 120px;
+    }
+
+    p {
+        position: absolute;
+        top: 20px;
+        font-size: 22px;
+        left: 50px;
     }
 }
 
@@ -150,34 +186,5 @@ Header {
     & #content {
         color: #fcf9f9;
         font-family: "Roboto Condensed", serif;
-    }
-}
-
-#bio{
-    position: absolute;
-    top: 850px;
-    left: 120px;
-    font-family: "Roboto Condensed", serif;
-    color: #fcf9f9;
-    font-size: 30px;
-
-    & #biografia{
-        position: absolute;
-        z-index: -1;
-        display: flex;
-        background-color: rgb(36, 36, 36);
-        border-color: rgb(55, 184, 98);
-        border-style: solid;
-        border-radius: 10px;
-        border-width: 5px;
-        width: 700px;
-        height: 300px;
-        top: 120px;
-    }
-
-    p{
-        position: absolute;
-        font-size: 23px;
-        left: 50px;
     }
 }
