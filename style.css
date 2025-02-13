@@ -1,14 +1,25 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     background-color: #080808;
 }
 
 /* LINKS DE TRANSIÇÃO */
-#linkbio {
+#introlink {
+    position: absolute;
+    top: -200px;
+}
+
+#biolink {
     position: absolute;
     top: -130px;
+}
+
+#teclink {
+    position: absolute;
+    top: -170px;
 }
 
 /* LINKS SEM EFEITO */
@@ -127,7 +138,7 @@ Header {
 
     p {
         position: absolute;
-        top: 20px;
+        top: 14px;
         font-size: 22px;
         left: 50px;
     }
@@ -186,5 +197,39 @@ Header {
     & #content {
         color: #fcf9f9;
         font-family: "Roboto Condensed", serif;
+    }
+}
+
+/* FOOTER */
+footer {
+    position: absolute;
+    top: 3200px;
+    height: 500px;
+
+    h5 {
+        color: #fcf9f9;
+        margin-left: 450px;
+        font-size: 55px;
+        font-family: "Roboto Condensed", serif;
+    }
+
+    #contato2 {
+        margin-left: 560px;
+
+        #insta2 {
+            cursor: pointer;
+            height: 80px;
+        }
+
+        #github2 {
+            cursor: pointer;
+            height: 80px;
+        }
+
+        p {
+            font-family: "Roboto Condensed", serif;
+            margin-left: 50px;
+            margin-top: 90px;
+        }
     }
 }
