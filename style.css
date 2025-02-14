@@ -3,17 +3,17 @@ html {
 }
 
 body {
-    background-color: #080808;
+    background-color: #000000;
 }
 
-#gif{ /* MUDAR LINK */
+#gif {
+    position: absolute;
     z-index: -4;
-    position: fixed;
-    filter: opacity(20%);
-    width: 1370px;
-    height: 1370px;
-    left: -20px;
-    top: -300px;
+    filter: opacity(30%);
+    width: 1349px;
+    height: 1349px;
+    left: -0px;
+    top: 2900px;
 }
 
 /* LINKS DE TRANSIÇÃO */
@@ -30,6 +30,11 @@ body {
 #teclink {
     position: absolute;
     top: -170px;
+}
+
+#footerlink {
+    position: absolute;
+    margin-top: -270px;
 }
 
 /* LINKS SEM EFEITO */
@@ -153,7 +158,7 @@ Header {
         left: 50px;
     }
 
-    #foto2{
+    #foto2 {
         width: 360px;
         height: 360px;
         border-radius: 10px;
@@ -222,7 +227,7 @@ Header {
 /* FOOTER */
 footer {
     position: absolute;
-    top: 3200px;
+    top: 3350px;
     height: 500px;
 
     h5 {
@@ -233,6 +238,7 @@ footer {
     }
 
     #contato2 {
+        margin-top: -60px;
         margin-left: 560px;
 
         #insta2 {
@@ -248,7 +254,7 @@ footer {
         p {
             font-family: "Roboto Condensed", serif;
             margin-left: 50px;
-            margin-top: 90px;
+            margin-top: 50px;
         }
     }
 }
