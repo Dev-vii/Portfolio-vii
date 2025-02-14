@@ -6,6 +6,16 @@ body {
     background-color: #080808;
 }
 
+#gif{ /* MUDAR LINK */
+    z-index: -4;
+    position: fixed;
+    filter: opacity(20%);
+    width: 1370px;
+    height: 1370px;
+    left: -20px;
+    top: -300px;
+}
+
 /* LINKS DE TRANSIÇÃO */
 #introlink {
     position: absolute;
@@ -14,7 +24,7 @@ body {
 
 #biolink {
     position: absolute;
-    top: -130px;
+    top: -110px;
 }
 
 #teclink {
@@ -141,6 +151,15 @@ Header {
         top: 14px;
         font-size: 22px;
         left: 50px;
+    }
+
+    #foto2{
+        width: 360px;
+        height: 360px;
+        border-radius: 10px;
+        margin-left: 750px;
+        margin-top: -55px;
+        box-shadow: 2px 2px 8px rgb(67, 216, 117);
     }
 }
 
