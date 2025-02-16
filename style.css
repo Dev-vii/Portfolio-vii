@@ -173,19 +173,21 @@ Header {
     display: flex;
     position: absolute;
     top: 1800px;
-    left: 150px;
-    gap: 350px;
+    left: 320px;
+    gap: 220px;
 
     h2 {
         position: absolute;
         color: #fcf9f9;
         font-family: "Roboto Condensed", serif;
         font-size: 50px;
-        margin-left: 270px;
+        left: 120px;
         top: -140px;
     }
 
-    & #cartão1, #cartão2, #cartão3 {
+    & #cartão1,
+    #cartão2,
+    #cartão3 {
         position: absolute;
         z-index: -1;
         display: flex;
@@ -194,25 +196,21 @@ Header {
         border-style: solid;
         border-radius: 40px;
         border-width: 5px;
-        width: 300px;
-        height: 500px;
+        width: 200px;
+        height: 250px;
         justify-content: center;
 
         & #tec {
-            margin-top: 20px;
+            margin-top: 30px;
             width: 130px;
             height: 180px;
         }
 
-        h3 {
+        #texto1, #texto2, #texto3{
+            opacity: 0;
+            transition: opacity 0.2s ease-out;
             position: absolute;
-            top: 205px;
-            font-size: 30px;
-        }
-
-        p {
-            position: absolute;
-            top: 280px;
+            top: 220px;
             text-align: center;
             font-size: 16px;
         }
