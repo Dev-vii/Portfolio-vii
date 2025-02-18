@@ -207,13 +207,13 @@ Header {
             height: 180px;
         }
 
-        #texto1, #texto2, #texto3{
-            opacity: 0;
-            transition: opacity 0.2s ease-out;
+        #texto1,
+        #texto2,
+        #texto3 {
             position: absolute;
             top: 210px;
             text-align: center;
-            font-size: 16px;
+            font-size: 0.1px;
         }
     }
 

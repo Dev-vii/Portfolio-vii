@@ -11,8 +11,8 @@ function html5enter() {
     cartãojs.style.transition = "0.5s"
     cartãojs.style.marginLeft = "50px"
     cartãohtml.style.top = "0px"
-    textohtml.style.opacity = "1"
-    textohtml.style.transition = "opacity 0.2s ease-out;"
+    textohtml.style.fontSize = "16px"
+    textohtml.style.transition = "0.5s"
 }
 function html5out() {
     cartãohtml.style.width = "200px"
@@ -22,7 +22,7 @@ function html5out() {
     cartãocss.style.marginLeft = "0px"
     cartãojs.style.marginLeft = "0px"
     cartãohtml.style.top = "100px"
-    textohtml.style.opacity = "0"
+    textohtml.style.fontSize = "0.1px"
 }
 
 // CSS3
@@ -38,7 +38,8 @@ function css3enter() {
     cartãojs.style.transition = "0.5s"
     cartãocss.style.transition = "0.5s"
     textocss.style.opacity = "1"
-    textocss.style.transition = "opacity 0.2s ease-out;"
+    textocss.style.fontSize = "16px"
+    textocss.style.transition = "0.5s"
 }
 function css3out() {
     cartãocss.style.width = "200px"
@@ -49,7 +50,7 @@ function css3out() {
     cartãocss.style.top = "100px"
     cartãojs.style.transition = "0.5s"
     cartãocss.style.transition = "0.5s"
-    textocss.style.opacity = "0"
+    textocss.style.fontSize = "0.1px"
 }
 
 // JAVASCRIPT
@@ -64,7 +65,8 @@ function jsenter() {
     cartãohtml.style.marginLeft = "-50px"
     cartãocss.style.marginLeft = "-50px"
     textojs.style.opacity = "1"
-    textojs.style.transition = "opacity 0.2s ease-out;"
+    textojs.style.fontSize = "16px"
+    textojs.style.transition = "0.5s"
 }
 function jsout() {
     cartãojs.style.width = "200px"
@@ -74,5 +76,5 @@ function jsout() {
     cartãohtml.style.marginLeft = "0px"
     cartãocss.style.marginLeft = "0px"
     cartãojs.style.transition = "0.5s"
-    textojs.style.opacity = "0"
+    textojs.style.fontSize = "0.1px"
 }
