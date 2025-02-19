@@ -126,6 +126,14 @@ Header {
         margin-top: -30px;
         font-size: 23px;
     }
+
+    #icon1 {
+        position: absolute;
+        z-index: 3;
+        height: 140px;
+        top: 200px;
+        left: 960px;
+    }
 }
 
 /* BIOGRAFIA */
@@ -166,6 +174,47 @@ Header {
         margin-top: -55px;
         box-shadow: 2px 2px 8px rgb(67, 216, 117);
     }
+}
+
+/* ÍCONES */
+#vsicon {
+    position: absolute;
+    height: 400px;
+    top: 1150px;
+    left: 100px;
+    z-index: -3;
+    filter: blur(8px) opacity(70%);
+    transform: rotate(-30deg);
+}
+
+#hubicon {
+    position: absolute;
+    height: 400px;
+    top: 750px;
+    left: 700px;
+    z-index: -3;
+    filter: blur(12px) opacity(40%);
+    transform: rotate(8deg);
+}
+
+#htmlicon {
+    position: absolute;
+    height: 250px;
+    top: 1800px;
+    left: 60px;
+    z-index: -3;
+    filter: blur(15px) opacity(30%);
+    transform: rotate(10deg);
+}
+
+#giticon {
+    position: absolute;
+    height: 350px;
+    top: 2200px;
+    left: 900px;
+    z-index: -3;
+    filter: blur(10px) opacity(70%);
+    transform: rotate(-10deg);
 }
 
 /* TECNOLOGIAS */
