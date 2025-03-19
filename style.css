@@ -238,9 +238,9 @@ Header {
     #cartão2,
     #cartão3 {
         display: flex;
-        position: absolute;
         z-index: -1;
         top: 100px;
+        gap: -20px;
         background-color: rgb(36, 36, 36);
         border-color: rgb(55, 184, 98);
         border-style: solid;
@@ -265,10 +265,24 @@ Header {
             font-size: 0.1px;
         }
     }
-
+    
     & #content {
         color: #fcf9f9;
         font-family: "Roboto Condensed", serif;
+    }
+
+    /* TRANSIÇÕES */
+    & #cartão1:hover,
+    #cartão2:hover,
+    #cartão3:hover {
+        transition: 0.5s;
+        width: 300px;
+        height: 350px;
+    }
+    & #cartão1:not(:hover),
+    #cartão2:not(:hover),
+    #cartão3:not(:hover) {
+        transition: 0.5s;
     }
 }
 
