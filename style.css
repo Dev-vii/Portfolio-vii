@@ -234,9 +234,7 @@ Header {
         top: -160px;
     }
 
-    & #cartão1,
-    #cartão2,
-    #cartão3 {
+    & #cartão {
         display: flex;
         z-index: -1;
         top: 100px;
@@ -256,33 +254,38 @@ Header {
             height: 180px;
         }
 
-        #texto1,
-        #texto2,
-        #texto3 {
+        #texto {
             position: absolute;
             top: 210px;
             text-align: center;
             font-size: 0.1px;
         }
     }
-    
+
     & #content {
         color: #fcf9f9;
         font-family: "Roboto Condensed", serif;
     }
 
     /* TRANSIÇÕES */
-    & #cartão1:hover,
-    #cartão2:hover,
-    #cartão3:hover {
+    & #cartão:hover {
         transition: 0.5s;
         width: 300px;
         height: 350px;
+
+        & #texto {
+            transition: 0.5s;
+            font-size: 16px;
+        }
     }
-    & #cartão1:not(:hover),
-    #cartão2:not(:hover),
-    #cartão3:not(:hover) {
+
+    & #cartão:not(:hover) {
         transition: 0.5s;
+
+        & #texto {
+            transition: 0.5s;
+            font-size: 0.1px;
+        }
     }
 }
 
