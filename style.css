@@ -29,7 +29,7 @@ body {
 
 #teclink {
     position: absolute;
-    top: -170px;
+    top: -290px;
 }
 
 #footerlink {
@@ -71,7 +71,7 @@ Header {
         transition: 0.2s;
     }
 
-    & #contato1 {
+    & #Contact1 {
         cursor: pointer;
         position: relative;
         left: 1200px;
@@ -112,13 +112,13 @@ Header {
 }
 
 /* INTRODUÇÃO */
-#intro {
+.intro {
     position: absolute;
     font-family: "Roboto Condensed", serif;
     color: #fcf9f9;
     left: 100px;
     top: 200px;
-    font-size: 30px;
+    font-size: 39px;
 
     & p {
         position: absolute;
@@ -143,7 +143,7 @@ Header {
     left: 120px;
     font-family: "Roboto Condensed", serif;
     color: #fcf9f9;
-    font-size: 30px;
+    font-size: 40px;
 
     & #biografia {
         position: absolute;
@@ -177,7 +177,7 @@ Header {
 }
 
 /* ÍCONES */
-#vsicon {
+.vsicon {
     position: absolute;
     height: 400px;
     top: 1150px;
@@ -187,7 +187,7 @@ Header {
     transform: rotate(-30deg);
 }
 
-#hubicon {
+.hubicon {
     position: absolute;
     height: 400px;
     top: 750px;
@@ -197,7 +197,7 @@ Header {
     transform: rotate(8deg);
 }
 
-#htmlicon {
+.htmlicon {
     position: absolute;
     height: 250px;
     top: 1800px;
@@ -207,7 +207,7 @@ Header {
     transform: rotate(10deg);
 }
 
-#giticon {
+.giticon {
     position: absolute;
     height: 350px;
     top: 2200px;
@@ -218,27 +218,23 @@ Header {
 }
 
 /* TECNOLOGIAS */
+h2 {
+    position: relative;
+    color: #fcf9f9;
+    font-family: "Roboto Condensed", serif;
+    font-size: 75px;
+    text-align: center;
+    top: 1550px;
+}
 #tecnologias {
-    display: flex;
     position: absolute;
     top: 1800px;
     left: 320px;
-    gap: 220px;
-
-    h2 {
-        position: absolute;
-        color: #fcf9f9;
-        font-family: "Roboto Condensed", serif;
-        font-size: 70px;
-        left: -220px;
-        top: -160px;
-    }
+    gap: 20px;
 
     & #cartão {
         display: flex;
         z-index: -1;
-        top: 100px;
-        gap: -20px;
         background-color: rgb(36, 36, 36);
         border-color: rgb(55, 184, 98);
         border-style: solid;
@@ -247,31 +243,27 @@ Header {
         width: 200px;
         height: 250px;
         justify-content: center;
+        color: #fcf9f9;
+        font-family: "Roboto Condensed", serif;
 
-        & #tec {
+        & .ImgTec {
             margin-top: 30px;
             width: 130px;
             height: 180px;
         }
 
         #texto {
-            position: absolute;
             top: 210px;
             text-align: center;
             font-size: 0.1px;
         }
     }
 
-    & #content {
-        color: #fcf9f9;
-        font-family: "Roboto Condensed", serif;
-    }
-
     /* TRANSIÇÕES */
     & #cartão:hover {
         transition: 0.5s;
         width: 300px;
-        height: 350px;
+        height: 450px;
 
         & #texto {
             transition: 0.5s;
