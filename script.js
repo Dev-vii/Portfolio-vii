@@ -20,14 +20,3 @@ foto2.addEventListener("mouseenter", () => {
 foto2.addEventListener("mouseleave", () => {
     foto2.classList.remove("aumentar-sombra")
 })
-
-// TEXTOS
-const text = document.getElementById("textGlow")
-
-text.addEventListener("mouseenter", () => {
-    text.classList.add("aumentar-sombra")
-})
-
-text.addEventListener("mouseleave", () => {
-    text.classList.remove("aumentar-sombra")
-})
