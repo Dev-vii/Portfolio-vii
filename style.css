@@ -6,6 +6,15 @@ body {
     background-color: #000000;
 }
 
+#textGlow {
+    transition: text-shadow 0.2s ease;
+}
+
+#textGlow.aumentar-sombra {
+    transition: text-shadow 0.2s ease;
+    text-shadow: 0px 0px 10px rgb(62, 207, 111);
+}
+
 #gif {
     position: absolute;
     z-index: -4;
@@ -109,6 +118,12 @@ Header {
     border-width: 3px;
     border-style: solid;
     border-radius: 50%;
+    transition: box-shadow 0.3s ease;
+}
+
+#circle.aumentar-sombra {
+    box-shadow: 0 0 30px rgb(55, 184, 98);
+    transition: box-shadow 0.3s ease;
 }
 
 /* INTRODUÇÃO */
@@ -157,6 +172,12 @@ Header {
         width: 700px;
         height: 300px;
         top: 120px;
+        transition: box-shadow 0.2s ease;
+    }
+
+    #biografia:hover {
+        transition: box-shadow 0.2s ease;
+        box-shadow: 0 0 10px rgb(55, 184, 98);
     }
 
     p {
@@ -172,7 +193,13 @@ Header {
         border-radius: 10px;
         margin-left: 750px;
         margin-top: -55px;
-        box-shadow: 2px 2px 8px rgb(67, 216, 117);
+        box-shadow: 0px 0px 10px rgb(67, 216, 117);
+        transition: box-shadow 0.3s ease;
+    }
+
+    #foto2.aumentar-sombra {
+        box-shadow: 0px 0px 25px rgb(55, 184, 98);
+        transition: box-shadow 0.3s ease;
     }
 }
 
@@ -225,7 +252,13 @@ h2 {
     font-size: 75px;
     text-align: center;
     top: 1550px;
+    transition: text-shadow 0.2s ease;
 }
+h2:hover {
+    transition: text-shadow 0.2s ease;
+    text-shadow: 0px 0px 10px rgb(62, 207, 111);
+}
+
 #tecnologias {
     display: flex;
     gap: 20px;
@@ -282,8 +315,6 @@ h2 {
     opacity: 1;
 }
 
-
-
 /* FOOTER */
 footer {
     position: absolute;
@@ -295,17 +326,19 @@ footer {
         margin-left: 450px;
         font-size: 55px;
         font-family: "Roboto Condensed", serif;
+        transition: text-shadow 0.3s ease;
+    }
+
+    h5:hover {
+        text-shadow: 0 0 10px rgb(55, 184, 98);
+        transition: text-shadow 0.3s ease;
     }
 
     #contato2 {
         margin-top: -60px;
         margin-left: 560px;
 
-        #insta2 {
-            cursor: pointer;
-            height: 80px;
-        }
-
+        #insta2,
         #github2 {
             cursor: pointer;
             height: 80px;
