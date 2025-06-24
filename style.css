@@ -284,7 +284,7 @@ h2 {
     font-family: "Manrope", sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 65px;
+    font-size: 70px;
     text-align: center;
     top: 1550px;
     transition: text-shadow 0.2s ease;
@@ -305,7 +305,7 @@ h2:hover span {
     position: relative;
     display: grid;
     gap: 20px;
-    top: 1620px;
+    top: 1600px;
     left: 50%;
     transform: translate(-50%);
 
@@ -373,6 +373,26 @@ h2:hover span {
 
     .cartao:hover .texto {
         opacity: 1;
+    }
+}
+
+.Certificados {
+    position: absolute;
+    top: 2420px;
+
+    & h4 {
+        position: relative;
+        color: #fcf9f9;
+        font-family: "Manrope", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 66px;
+        margin-left: 50px;
+        transition: text-shadow 0.3s ease;
+    }
+
+    h4:hover {
+        text-shadow: 0 0 10px rgb(55, 184, 98);
     }
 }
 
