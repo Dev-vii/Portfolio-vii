@@ -31,7 +31,7 @@ body {
 
 #teclink {
     position: absolute;
-    top: -290px;
+    top: 1520px;
 }
 
 #footerlink {
@@ -302,76 +302,90 @@ h2:hover span {
 }
 
 #tecnologias {
-    display: flex;
-    gap: 20px;
-    position: absolute;
-    top: 1800px;
-    left: 320px;
-}
-
-.cartao {
-    top: -50px;
-    background-color: rgb(36, 36, 36);
-    border: 4px solid rgb(55, 184, 98);
-    border-radius: 30px;
-    width: 200px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     position: relative;
-    transition: all 0.4s ease;
-    overflow: hidden;
-    color: #fcf9f9;
-    font-family: "Manrope", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    cursor: pointer;
+    display: grid;
+    gap: 20px;
+    top: 1620px;
+    left: 50%;
+    transform: translate(-50%);
 
-    & .ImgTec {
-        margin-top: 30px;
-        width: 60%;
-        transition: transform 0.4s ease;
-        transition: 0.4s ease;
+    & tr {
+        justify-content: center;
+        display: flex;
+        gap: 10px;
     }
-}
 
-.cartao:hover {
-    width: 300px;
-    height: 450px;
-    box-shadow: 0 0 20px rgb(55, 184, 98);
-}
+    & .cartao {
+        top: -50px;
+        background-color: rgb(36, 36, 36);
+        border: 4px solid rgb(55, 184, 98);
+        border-radius: 30px;
+        width: 200px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        transition: all 0.4s ease;
+        overflow: hidden;
+        color: #fcf9f9;
+        font-family: "Manrope", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        cursor: pointer;
 
-.cartao:hover .ImgTec {
-    transform: scale(0.8);
-    margin-top: -7px;
-    transition: 0.4s ease;
+        & .ImgTec {
+            margin-top: 30px;
+            width: 60%;
+            transition: transform 0.4s ease;
+            transition: 0.4s ease;
+        }
+    }
 
-}
+    .cartao:hover {
+        width: 280px;
+        height: 350px;
+        box-shadow: 0 0 20px rgb(55, 184, 98);
+    }
 
-.texto {
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    font-size: 13px;
-    padding: 10px;
-    text-align: center;
-    position: absolute;
-    bottom: 10px;
-}
+    .cartao:hover .ImgTec {
+        transform: scale(0.8);
+        margin-top: -7px;
+        transition: 0.4s ease;
 
-.cartao:hover .texto {
-    opacity: 1;
+    }
+
+    .texto {
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        font-size: 13px;
+        padding: 10px;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+
+        & h3 {
+            position: relative;
+            font-size: 20px;
+            top: 20px;
+        }
+    }
+
+    .cartao:hover .texto {
+        opacity: 1;
+    }
 }
 
 /* FOOTER */
 footer {
-    position: absolute;
-    top: 3350px;
+    position: relative;
+    top: 2640px;
     height: 500px;
 
     h5 {
+        position: relative;
         color: #fcf9f9;
-        margin-left: 400px;
+        text-align: center;
         font-size: 55px;
         font-family: "Manrope", sans-serif;
         font-weight: 800;
