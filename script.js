@@ -20,3 +20,20 @@ foto2.addEventListener("mouseenter", () => {
 foto2.addEventListener("mouseleave", () => {
     foto2.classList.remove("aumentar-sombra")
 })
+
+const img = document.createElement('img')
+const buttex = document.getElementById('buttex')
+
+function lightbox() {
+    img.src = 'img/certs/Lógica_de_Programação-CERTIFICADO-1.png'
+    img.alt = 'Logo CSS3'
+    img.classList.add("lightbox")
+    img.style.display = "block"
+    buttex.style.display = "block"
+    document.body.appendChild(img)
+}
+
+buttex.addEventListener('click', () => {
+    img.style.display = "none"
+    buttex.style.display = "none"
+})

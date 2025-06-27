@@ -396,7 +396,6 @@ h2:hover span {
             width: 380px;
             height: 300px;
             background-color: rgb(36, 36, 36);
-            border: 4px solid linear-gradient(to top, rgb(55, 184, 98), rgb(62, 207, 74));
             border-radius: 25px;
 
             & .certbar {
@@ -430,6 +429,30 @@ h2:hover span {
             }
         }
     }
+}
+
+.lightbox {
+    position: fixed;
+    display: block;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 90%;
+    z-index: 5;
+}
+
+#buttex {
+    cursor: pointer;
+    position: fixed;
+    display: none;
+    top: 30px;
+    left: 443px;
+    width: 40px;
+    height: 30px;
+    background-color: rgb(201, 21, 21);
+    color: #fcf9f9;
+    border: none;
+    z-index: 6;
 }
 
 /* GIF NO FINAL */
