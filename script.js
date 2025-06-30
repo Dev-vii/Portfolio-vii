@@ -23,6 +23,7 @@ foto2.addEventListener("mouseleave", () => {
 
 const img = document.createElement('img')
 const buttex = document.getElementById('buttex')
+const over = document.getElementById('overlay')
 
 function lightbox() {
     img.src = 'img/certs/Lógica_de_Programação-CERTIFICADO-1.png'
@@ -30,10 +31,12 @@ function lightbox() {
     img.classList.add("lightbox")
     img.style.display = "block"
     buttex.style.display = "block"
+    over.style.display = "block"
     document.body.appendChild(img)
 }
 
 buttex.addEventListener('click', () => {
     img.style.display = "none"
     buttex.style.display = "none"
+    over.style.display = "none"
 })

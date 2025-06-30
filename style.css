@@ -34,10 +34,22 @@ body {
     color: inherit;
 }
 
+#overlay {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: #000000;
+    filter: opacity(80%);
+}
+
 /* HEADER */
 Header {
     position: fixed;
-    z-index: 4;
+    z-index: 6;
     background-color: #000000;
     box-shadow: 0px 25px 15px #000000;
     width: 100%;
@@ -192,6 +204,7 @@ Header {
         height: 300px;
         top: 120px;
         transition: box-shadow 0.3s ease;
+        z-index: 2;
     }
 
     #biografia:hover {
@@ -207,6 +220,7 @@ Header {
         top: 14px;
         font-size: 19px;
         left: 50px;
+        z-index: 5;
     }
 
     #foto2 {
@@ -405,6 +419,7 @@ h2:hover span {
                 background: linear-gradient(to top, rgb(55, 184, 98), rgb(62, 207, 74));
                 border-radius: 0 0 20px 20px;
                 top: 50%;
+                z-index: 4;
             }
 
             & h4 {
@@ -413,6 +428,7 @@ h2:hover span {
                 font-size: 22px;
                 left: -25px;
                 top: -10px;
+                z-index: 4;
             }
 
             & p {
@@ -426,6 +442,15 @@ h2:hover span {
                 margin-left: 50px;
                 top: -25px;
                 left: -25px;
+                z-index: 4;
+            }
+
+            & .certcard {
+                position: relative;
+                height: 179%;
+                top: -307px;
+                border-radius: 25px;
+                z-index: 3;
             }
         }
     }
@@ -434,10 +459,10 @@ h2:hover span {
 .lightbox {
     position: fixed;
     display: block;
-    top: 30px;
+    top: 70px;
     left: 50%;
     transform: translate(-50%);
-    height: 90%;
+    height: 85%;
     z-index: 5;
 }
 
@@ -445,8 +470,8 @@ h2:hover span {
     cursor: pointer;
     position: fixed;
     display: none;
-    top: 30px;
-    left: 443px;
+    top: 70px;
+    left: 453px;
     width: 40px;
     height: 30px;
     background-color: rgb(201, 21, 21);
