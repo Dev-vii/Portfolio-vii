@@ -21,18 +21,14 @@ foto2.addEventListener("mouseleave", () => {
     foto2.classList.remove("aumentar-sombra")
 })
 
-const img = document.createElement('img')
+const img = document.querySelectorAll("#lightbox")
 const buttex = document.getElementById('buttex')
 const over = document.getElementById('overlay')
 
 function lightbox() {
-    img.src = 'img/certs/Lógica_de_Programação-CERTIFICADO-1.png'
-    img.alt = 'Logo CSS3'
-    img.classList.add("lightbox")
     img.style.display = "block"
     buttex.style.display = "block"
     over.style.display = "block"
-    document.body.appendChild(img)
 }
 
 buttex.addEventListener('click', () => {
