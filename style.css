@@ -287,7 +287,7 @@ h2 {
     font-family: "Manrope", sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 75px;
+    font-size: 70px;
     text-align: center;
     top: 1550px;
     transition: text-shadow 0.2s ease;
@@ -381,7 +381,7 @@ h2:hover span {
 
 .Certificados {
     position: absolute;
-    top: 2420px;
+    top: 2380px;
 
     & h4 {
         position: relative;
@@ -389,8 +389,8 @@ h2:hover span {
         font-family: "Manrope", sans-serif;
         font-weight: 800;
         font-style: normal;
-        font-size: 66px;
-        margin-left: 50px;
+        font-size: 58px;
+        left: 60px;
         transition: text-shadow 0.3s ease;
     }
 
@@ -405,8 +405,8 @@ h2:hover span {
         #certBox {
             cursor: pointer;
             position: relative;
-            top: -40px;
-            left: 50px;
+            top: -50px;
+            left: 60px;
             width: 380px;
             height: 300px;
             background-color: rgb(36, 36, 36);
@@ -426,7 +426,7 @@ h2:hover span {
                 cursor: auto;
                 position: relative;
                 font-size: 22px;
-                left: -25px;
+                left: 25px;
                 top: -10px;
                 z-index: 4;
             }
@@ -480,6 +480,32 @@ h2:hover span {
     z-index: 6;
 }
 
+/* PROJETOS */
+#Projetos {
+    position: relative;
+    top: 2350px;
+
+    #projlink {
+        position: absolute;
+        top: -100px;
+    }
+
+    h5 {
+        text-align: center;
+        color: #fcf9f9;
+        font-family: "Manrope", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 62px;
+        left: 60px;
+        transition: text-shadow 0.3s ease;
+    }
+
+    h5:hover {
+        text-shadow: 0 0 10px rgb(55, 184, 98);
+    }
+}
+
 /* GIF NO FINAL */
 #gif {
     position: absolute;
@@ -488,13 +514,13 @@ h2:hover span {
     width: 1349px;
     height: 1349px;
     left: -0px;
-    top: 2950px;
+    top: 3350px;
 }
 
 /* FOOTER */
 footer {
     position: relative;
-    top: 2640px;
+    top: 3040px;
     height: 500px;
 
     h5 {
