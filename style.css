@@ -433,14 +433,14 @@ h2:hover span {
 
             & p {
                 cursor: auto;
-                position: relative;
+                position: absolute;
                 font-size: 17px;
                 color: #fcf9f9;
                 font-family: "Manrope", sans-serif;
                 font-weight: 600;
                 font-style: normal;
                 margin-left: 50px;
-                top: -25px;
+                top: 230px;
                 left: -25px;
                 z-index: 4;
             }
@@ -549,7 +549,7 @@ h2:hover span {
                 cursor: pointer;
                 top: 110px;
                 left: 250px;
-                width: 190px;
+                width: 130px;
                 height: 40px;
                 font-family: "Manrope", sans-serif;
                 font-weight: 800;
@@ -557,6 +557,13 @@ h2:hover span {
                 color: #fcf9f9;
                 border: none;
                 border-radius: 20px;
+            }
+
+            .gitview {
+                position: absolute;
+                height: 48px;
+                left: 390px;
+                top: 236px;
             }
         }
     }
