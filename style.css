@@ -280,6 +280,26 @@ Header {
     transform: rotate(-10deg);
 }
 
+.jsicon {
+    position: absolute;
+    height: 270px;
+    top: 2900px;
+    left: 100px;
+    z-index: -3;
+    filter: blur(10px) opacity(70%);
+    transform: rotate(-8deg);
+}
+
+.reacticon {
+    position: absolute;
+    height: 350px;
+    top: 3200px;
+    left: 900px;
+    z-index: -3;
+    filter: blur(10px) opacity(60%);
+    transform: rotate(10deg);
+}
+
 /* TECNOLOGIAS */
 h2 {
     position: relative;
