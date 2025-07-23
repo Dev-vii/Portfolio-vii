@@ -293,7 +293,7 @@ Header {
 .reacticon {
     position: absolute;
     height: 350px;
-    top: 3200px;
+    top: 3000px;
     left: 900px;
     z-index: -3;
     filter: blur(10px) opacity(60%);
@@ -400,112 +400,10 @@ h2:hover span {
     }
 }
 
-.Certificados {
-    position: absolute;
-    top: 2380px;
-
-    & h4 {
-        position: relative;
-        color: #fcf9f9;
-        font-family: "Manrope", sans-serif;
-        font-weight: 800;
-        font-style: normal;
-        font-size: 58px;
-        left: 60px;
-        transition: text-shadow 0.3s ease;
-    }
-
-    h4:hover {
-        text-shadow: 0 0 10px rgb(55, 184, 98);
-    }
-
-    .Certs {
-        display: flex;
-        gap: 20px;
-
-        #certBox {
-            cursor: pointer;
-            position: relative;
-            top: -50px;
-            left: 60px;
-            width: 380px;
-            height: 300px;
-            background-color: rgb(36, 36, 36);
-            border-radius: 25px;
-
-            & .certbar {
-                position: relative;
-                width: 380px;
-                height: 150px;
-                background: linear-gradient(to top, rgb(55, 184, 98), rgb(62, 207, 74));
-                border-radius: 0 0 20px 20px;
-                top: 50%;
-                z-index: 4;
-            }
-
-            & h4 {
-                cursor: auto;
-                position: relative;
-                font-size: 22px;
-                left: 25px;
-                top: -10px;
-                z-index: 4;
-            }
-
-            & p {
-                cursor: auto;
-                position: absolute;
-                font-size: 17px;
-                color: #fcf9f9;
-                font-family: "Manrope", sans-serif;
-                font-weight: 600;
-                font-style: normal;
-                margin-left: 50px;
-                top: 230px;
-                left: -25px;
-                z-index: 4;
-            }
-
-            & .certcard {
-                position: absolute;
-                width: 380px;
-                top: 0;
-                border-radius: 25px;
-                z-index: 3;
-            }
-        }
-    }
-}
-
-#lightbox {
-    position: fixed;
-    display: none;
-    top: 30px;
-    left: 50%;
-    transform: translate(-50%);
-    height: 90%;
-    width: 50%;
-    z-index: 10;
-}
-
-#buttex {
-    cursor: pointer;
-    position: fixed;
-    display: none;
-    top: 30px;
-    left: 299px;
-    width: 40px;
-    height: 30px;
-    background-color: rgb(201, 21, 21);
-    color: #fcf9f9;
-    border: none;
-    z-index: 6;
-}
-
 /* PROJETOS */
 #Projetos {
     position: relative;
-    top: 2350px;
+    top: 1670px;
 
     & #projlink {
         position: absolute;
@@ -518,7 +416,7 @@ h2:hover span {
         font-family: "Manrope", sans-serif;
         font-weight: 800;
         font-style: normal;
-        font-size: 62px;
+        font-size: 65px;
         left: 60px;
         transition: text-shadow 0.3s ease;
     }
@@ -600,13 +498,13 @@ h2:hover span {
     width: 1349px;
     height: 1349px;
     left: -0px;
-    top: 3550px;
+    top: 3070px;
 }
 
 /* FOOTER */
 footer {
     position: relative;
-    top: 3050px;
+    top: 2550px;
     height: 500px;
 
     & h5 {
