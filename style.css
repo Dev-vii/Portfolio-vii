@@ -542,3 +542,91 @@ footer {
         }
     }
 }
+
+@media (max-width: 767px) {
+
+    /* INTRODUÇÃO */
+    .intro {
+        position: static;
+        width: 100%;
+        text-align: center;
+        transition: text-shadow 0.3s ease;
+
+        & h1 {
+            position: absolute;
+            top: 370px;
+            font-size: 34px;
+        }
+
+        & p {
+            position: absolute;
+            top: 530px;
+            left: 30px;
+            font-size: 15px;
+        }
+
+        #icon1 {
+            display: block;
+            margin: 20px auto 0 auto;
+            height: 80px;
+        }
+    }
+
+    /* FOTO */
+    #foto1 {
+        left: 50%;
+        top: 130px;
+        width: 240px;
+        height: 240px;
+        transform: translate(-50%);
+    }
+
+    #circle {
+        top: 135px;
+        left: 52%;
+        width: 240px;
+        height: 240px;
+        transform: translate(-50%);
+    }
+
+
+    /* BIOGRAFIA */
+    #bio {
+        position: static;
+        width: 100%;
+        color: #fcf9f9;
+        margin-top: 940px;
+
+        h1 {
+            position: static;
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        & #biografia {
+            position: relative;
+            background-color: rgb(36, 36, 36);
+            top: 300px;
+            left: 10px;
+            width: 315px;
+            height: 300px;
+        }
+
+        p {
+            position: relative;
+            font-size: 15px;
+            text-align: left;
+        }
+
+        #foto2 {
+            position: relative;
+            width: 280px;
+            height: 280px;
+            top: -250px;
+            left: -860px;
+            display: block;
+        }
+    }
+
+}
