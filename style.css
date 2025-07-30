@@ -1,3 +1,23 @@
+@keyframes floatY {
+    0% {
+        transform: translateY(0) rotate(var(--rotate, 0deg));
+    }
+
+    50% {
+        transform: translateY(-50px) rotate(var(--rotate, 0deg));
+    }
+
+    100% {
+        transform: translateY(0) rotate(var(--rotate, 0deg));
+    }
+}
+
+@keyframes floatY2 {
+    50% {
+        transform: translateY(-20px) rotate(var(--rotate, 0deg));
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -125,8 +145,9 @@ Header {
         position: absolute;
         z-index: 3;
         height: 140px;
-        top: 200px;
+        top: 210px;
         left: 960px;
+        animation: floatY2 4s ease-in-out infinite;
     }
 }
 
@@ -248,6 +269,8 @@ Header {
     z-index: -3;
     filter: blur(8px) opacity(70%);
     transform: rotate(-30deg);
+    animation: floatY 4s ease-in-out infinite;
+    --rotate: -30deg;
 }
 
 .hubicon {
@@ -258,6 +281,8 @@ Header {
     z-index: -3;
     filter: blur(12px) opacity(40%);
     transform: rotate(8deg);
+    animation: floatY 6s ease-in-out infinite;
+    --rotate: 8deg;
 }
 
 .htmlicon {
@@ -268,6 +293,8 @@ Header {
     z-index: -3;
     filter: blur(15px) opacity(30%);
     transform: rotate(10deg);
+    animation: floatY 3.5s ease-in-out infinite;
+    --rotate: 10deg;
 }
 
 .giticon {
@@ -278,6 +305,8 @@ Header {
     z-index: -3;
     filter: blur(10px) opacity(70%);
     transform: rotate(-10deg);
+    animation: floatY 5s ease-in-out infinite;
+    --rotate: -10deg;
 }
 
 .jsicon {
@@ -288,6 +317,8 @@ Header {
     z-index: -3;
     filter: blur(10px) opacity(70%);
     transform: rotate(-8deg);
+    animation: floatY 6.5s ease-in-out infinite;
+    --rotate: -8deg;
 }
 
 .reacticon {
@@ -298,6 +329,8 @@ Header {
     z-index: -3;
     filter: blur(10px) opacity(60%);
     transform: rotate(10deg);
+    animation: floatY 4.5s ease-in-out infinite;
+    --rotate: 10deg;
 }
 
 /* TECNOLOGIAS */
