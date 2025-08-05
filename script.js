@@ -20,20 +20,3 @@ foto2.addEventListener("mouseenter", () => {
 foto2.addEventListener("mouseleave", () => {
     foto2.classList.remove("aumentar-sombra")
 })
-
-// PROBLEMA NAS IMAGENS DE CERTIFICADOS
-const img = document.getElementById("lightbox")
-const buttex = document.getElementById('buttex')
-const over = document.getElementById('overlay')
-
-function lightbox() {
-    img.style.display = "block"
-    buttex.style.display = "block"
-    over.style.display = "block"
-}
-
-buttex.addEventListener('click', () => {
-    img.style.display = "none"
-    buttex.style.display = "none"
-    over.style.display = "none"
-})
