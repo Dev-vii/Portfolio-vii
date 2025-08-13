@@ -40,7 +40,7 @@ body {
 
 #teclink {
     position: absolute;
-    top: 1670px;
+    top: 1700px;
 }
 
 #footerlink {
@@ -194,7 +194,7 @@ Header {
 /* BIOGRAFIA */
 #bio {
     position: absolute;
-    top: 850px;
+    top: 900px;
     left: 120px;
     color: #fcf9f9;
     animation: slideInUp 0.6s ease-out;
@@ -317,10 +317,10 @@ Header {
 .jsicon {
     position: absolute;
     height: 270px;
-    top: 2900px;
+    top: 2650px;
     left: 100px;
     z-index: -3;
-    filter: blur(10px) opacity(70%);
+    filter: blur(10px) opacity(50%);
     transform: rotate(-8deg);
     animation: floatY 6.5s ease-in-out infinite;
     --rotate: -8deg;
@@ -345,7 +345,7 @@ h2 {
     font-family: "Manrope", sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 70px;
+    font-size: 63px;
     text-align: center;
     top: 1550px;
     transition: text-shadow 0.2s ease;
@@ -370,73 +370,146 @@ h2:hover span {
     left: 50%;
     transform: translate(-50%);
 
-    & tr {
+    /* LINHA 1 */
+    & .tr1 {
+        margin-left: 100px;
         justify-content: center;
         display: flex;
         gap: 10px;
-        margin-bottom: 10px;
-    }
 
-    & .cartao {
-        position: relative;
-        top: -50px;
-        background-color: rgb(36, 36, 36);
-        width: 200px;
-        height: 250px;
-        display: flex;
-        clip-path: polygon(50% 0%,
-                100% 25%,
-                100% 75%,
-                50% 100%,
-                0% 75%,
-                0% 25%);
-        flex-direction: column;
-        align-items: center;
-        transition: background 0.4s, width 0.4s, height 0.4s, box-shadow 0.4s, color 0.4s;
-        color: #fcf9f9;
-        font-family: "Manrope", sans-serif;
-        font-weight: 800;
-        font-style: normal;
-        cursor: pointer;
-
-        & .ImgTec {
+        & .cartao {
             position: relative;
-            opacity: 1;
-            top: 50%;
-            width: 60%;
-            transition: opacity 0.4s ease, transform 0.4s ease;
-            transform: translate(0, -50%);
+            top: -50px;
+            background-color: rgb(36, 36, 36);
+            width: 200px;
+            height: 250px;
+            display: flex;
+            clip-path: polygon(50% 0%,
+                    100% 25%,
+                    100% 75%,
+                    50% 100%,
+                    0% 75%,
+                    0% 25%);
+            flex-direction: column;
+            align-items: center;
+            transition: background 0.4s, width 0.4s, height 0.4s, box-shadow 0.4s, color 0.4s;
+            color: #fcf9f9;
+            font-family: "Manrope", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            cursor: pointer;
+
+            & .ImgTec {
+                position: relative;
+                opacity: 1;
+                top: 50%;
+                width: 60%;
+                transition: opacity 0.4s ease, transform 0.4s ease;
+                transform: translate(0, -50%);
+            }
+
+            & .TecHover {
+                position: relative;
+                opacity: 0;
+                top: 50%;
+                width: 60%;
+                transition: opacity 0.4s ease, transform 0.4s ease;
+                transform: translate(0, -150%);
+            }
         }
 
-        & .TecHover {
+        .cartao:hover {
+            width: 280px;
+            height: 350px;
+            background: linear-gradient(to top, rgb(55, 184, 98), rgb(62, 207, 74));
+        }
+
+        .cartao:hover .ImgTec {
             position: relative;
             opacity: 0;
             top: 50%;
             width: 60%;
             transition: opacity 0.4s ease, transform 0.4s ease;
-            transform: translate(0, -150%);
+            transform: translate(0, -50%);
+
+        }
+
+        .cartao:hover .TecHover {
+            opacity: 1;
+            transition: opacity 0.4s ease, transform 0.4s ease;
         }
     }
 
-    .cartao:hover {
-        width: 280px;
-        height: 350px;
-        background: linear-gradient(to top, rgb(55, 184, 98), rgb(62, 207, 74));
-    }
-
-    .cartao:hover .ImgTec {
+    /* LINHA 2 */
+    & .tr2 {
         position: relative;
-        opacity: 0;
-        top: 50%;
-        width: 60%;
-        transition: opacity 0.4s ease, transform 0.4s ease;
-        transform: translate(0, -50%);
+        top: -55px;
+        margin-left: -110px;
+        justify-content: center;
+        display: flex;
+        gap: 10px;
 
-    }
+        & .cartao {
+            position: relative;
+            top: -50px;
+            background-color: rgb(36, 36, 36);
+            width: 200px;
+            height: 250px;
+            display: flex;
+            clip-path: polygon(50% 0%,
+                    100% 25%,
+                    100% 75%,
+                    50% 100%,
+                    0% 75%,
+                    0% 25%);
+            flex-direction: column;
+            align-items: center;
+            transition: background 0.4s, width 0.4s, height 0.4s, box-shadow 0.4s, color 0.4s;
+            color: #fcf9f9;
+            font-family: "Manrope", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            cursor: pointer;
 
-    .cartao:hover .TecHover {
-        opacity: 1;
-        transition: opacity 0.4s ease, transform 0.4s ease;
+            & .ImgTec {
+                position: relative;
+                opacity: 1;
+                top: 50%;
+                width: 60%;
+                transition: opacity 0.4s ease, transform 0.4s ease;
+                transform: translate(0, -50%);
+            }
+
+            & .TecHover {
+                position: relative;
+                opacity: 0;
+                top: 50%;
+                width: 60%;
+                transition: opacity 0.4s ease, transform 0.4s ease;
+                transform: translate(0, -150%);
+            }
+        }
+
+        .cartao:hover {
+            width: 280px;
+            height: 350px;
+            background: linear-gradient(to top, rgb(55, 184, 98), rgb(62, 207, 74));
+        }
+
+        .cartao:hover .ImgTec {
+            position: relative;
+            opacity: 0;
+            top: 50%;
+            width: 60%;
+            transition: opacity 0.4s ease, transform 0.4s ease;
+            transform: translate(0, -50%);
+
+        }
+
+        .cartao:hover .TecHover {
+            opacity: 1;
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
     }
 
     .texto {
@@ -461,11 +534,11 @@ h2:hover span {
 /* PROJETOS */
 #Projetos {
     position: relative;
-    top: 1670px;
+    top: 1750px;
 
     & #projlink {
         position: absolute;
-        top: -80px;
+        top: -110px;
     }
 
     & h5 {
@@ -474,7 +547,7 @@ h2:hover span {
         font-family: "Manrope", sans-serif;
         font-weight: 800;
         font-style: normal;
-        font-size: 65px;
+        font-size: 58px;
         left: 60px;
         transition: text-shadow 0.3s ease;
     }
@@ -485,7 +558,7 @@ h2:hover span {
 
     & .projs {
         position: absolute;
-        top: 140px;
+        top: 120px;
         left: 20px;
         display: flex;
         gap: 20px;
@@ -556,7 +629,7 @@ h2:hover span {
     width: 1349px;
     height: 1349px;
     left: -0px;
-    top: 3070px;
+    top: 3180px;
 }
 
 /* FOOTER */
